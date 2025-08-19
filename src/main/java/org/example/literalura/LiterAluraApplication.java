@@ -12,7 +12,6 @@ public class LiterAluraApplication implements CommandLineRunner {
 
     private final DataSource dataSource;
 
-    // Constructor con DataSource inyectado por Spring
     public LiterAluraApplication(DataSource dataSource) {
         this.dataSource = dataSource;
     }
@@ -23,7 +22,6 @@ public class LiterAluraApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        // Prueba de conexión al iniciar
         try (Connection conn = dataSource.getConnection()) {
             System.out.println("✅ Conexión a SQLite OK: " + conn.getMetaData().getURL());
         }
