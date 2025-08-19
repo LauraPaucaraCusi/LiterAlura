@@ -12,6 +12,7 @@ public class LiterAluraApplication implements CommandLineRunner {
 
     private final DataSource dataSource;
 
+    // Constructor con DataSource inyectado por Spring
     public LiterAluraApplication(DataSource dataSource) {
         this.dataSource = dataSource;
     }
