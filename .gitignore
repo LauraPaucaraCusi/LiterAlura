@@ -1,0 +1,30 @@
+# Maven / Gradle / Build
+/target/
+/build/
+/out/
+*.class
+*.log
+
+# IntelliJ
+/.idea/
+/*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE / editor
+.vscode/
+
+# Node (si existe)
+node_modules/
+
+# SQLite DB local (no subirla si no quieres)
+/src/main/resources/db/*.db
+*.sqlite
+*.sqlite3
+
+# Gradle wrapper / caches
+.gradle/
+gradlew
+gradlew.bat
